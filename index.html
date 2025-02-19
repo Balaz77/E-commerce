@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecm.css">
+    <title>Loja de carros</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="sobre/sobre.html">sobre</a></li>
+                <li><a href="contato/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="filter">
+            <input type="text" id="searchInput" placeholder="Digite o nome do carro">
+            <button id="searchButton">Buscar</button>
+        </section>
+
+        <section class="hero">
+            <h1>AutoHome - Seu carro a um click de distância</h1>
+            <p>Encontre aqui seu carro dos sonhos</p>
+            <button onclick="window.location.href='#products'">Compre agora</button>
+        </section>
+        <section class="products">
+            <h2>Produtos em destaque</h2>
+            <div class="product-grid">
+          
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Carrinho de compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+            </table>
+            <p>Total: <span id="total">R$0.00</span></p>
+            <button id="checkout">Pagar</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pedro E-commerce v2</p>
+    </footer>
+    <script src="ecm.js"></script>
+</body>
+</html>
