@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ecm.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Loja de carros</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main>    
 
         <section class="filter">
             <input type="text" id="searchInput" placeholder="Digite o nome do carro">
@@ -27,7 +28,21 @@
         <section class="hero">
             <h1>AutoHome - Seu carro a um click de distância</h1>
             <p>Encontre aqui seu carro dos sonhos</p>
-            <button onclick="window.location.href='#products'">Compre agora</button>
+            <button onclick="window.location.href='#products'">Compre agora</button><br><br>
+
+            <div class="carrosel">
+                <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+
+                <div class="container-carrosel">
+                    <img src="/AULAS/JSEbac/praticando/praticando8/imagem/carro1.jpg" class="slide active"> 
+                    <img src="/AULAS/JSEbac/praticando/praticando8/imagem/carro2.jpg" class="slide"> 
+                    <img src="/AULAS/JSEbac/praticando/praticando8/imagem/carro3.jpg" class="slide"> 
+                    <img src="/AULAS/JSEbac/praticando/praticando8/imagem/carro4.jpg" class="slide">    
+                </div>
+
+                <button class="next" onclick="mudarSlide(1)">&#10095;</button> 
+            </div>
+
         </section>
         <section class="products">
             <h2>Produtos em destaque</h2>

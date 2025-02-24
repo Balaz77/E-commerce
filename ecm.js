@@ -132,15 +132,55 @@ let next = document.querySelector('.next');
 document.getElementById('checkout').addEventListener('click', ()=> {
     //ve se o carrinho esta vazio, se sim avisa
         if (cart.length === 0){
-            alert('Seu carrinho esra vazio!');
+            document.getElementById('checkout').addEventListener('click', function(){
+                Swal.fire({
+                    title: "Seu carrinho esta vazio!",
+                    text: "Escolha algum produto da nossa loja!",
+                    icon: "error",
+                    confirmButtonText: "Fechar"
+                });
+           });
         }
         //Se estiver com itens dentro eçe mostra com o renderCart
         else{
-            alert('Pedido realizado com sucesso!');
+            document.getElementById('checkout').addEventListener('click', function(){
+                Swal.fire({
+                    title: "Compra realizada com sucesso",
+                    text: "Obrigado por comprar conosco",
+                    icon: "success",
+                    confirmButtonText: "Fechar"
+                });
+           });
             cart = [];
             renderCart();
         }
     });
 
+//muda os slides para o carrosel
+let indiceAtual = 0;
+const slides = document.querySelectorAll('.slide');
+
+function mostrarSlide(indice){
+    slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+            if (i === indice){
+                slide.classList.add("active");
+            }
+    });
+}
+
+function mudarSlide(direcao){
+    indiceAtual += direcao;
+
+    if (indiceAtual < 0){
+        indiceAtual = slides.length - 1;
+    } else if (indiceAtual >= slides.length){
+        indiceAtual = 0;
+    }
+
+    mostrarSlide(indiceAtual);
+}
+
+setInterval(() => mudarSlide(1), 3000);
 renderProducts();
 

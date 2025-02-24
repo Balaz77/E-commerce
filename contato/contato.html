@@ -3,25 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="contatto.css">
     <title>Contatos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/slicknav.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/jquery.slicknav.min.js"></script>
 </head>
 <body>
-    <h3>Contatos</h3>
-
-        <strong><p>Fale conosco:</p></strong>
-
-        <ul>
-            <li> <strong>Github:</strong> <a href="https://github.com/Balaz77"> https://github.com/Balaz77 </a> </li>
-            <li> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pedro-balazshazi-66532b344/"> https://www.linkedin.com/in/pedro-balazshazi-66532b344 </a> </li>
-
-        </ul>
-
-    </div>
-
-    <button>
-        <a href="/AULAS/JSEbac/praticando/praticando8/index.html">Volte a pagina de compras.</a>
-    </button> 
     
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><strong><a href="/AULAS/JSEbac/praticando/praticando8/index.html">Inicio</a></strong></li>
+                <li><strong><a href="/AULAS/JSEbac/praticando/praticando8/sobre/sobre.html">Sobre</a></strong></li>
+                <li><strong><a href="#">Contato</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Contato</h1>
+            <p>Fale conosco</p>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    <p>Endereço: Rua das lojas, 123 - São Paulo, SP</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Email: contato@gmail.com</p>
+                    <p>Horario: Segunda a Sexta, 9h as 18h</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pedro E-commerce V2</p>
+    </footer>
+
+    <script src="contato.js"></script>
+
 </body>
 </html>

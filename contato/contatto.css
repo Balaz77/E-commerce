@@ -1,74 +1,114 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h3 {
-    font-size: 2rem;
-    color: #f39c12;
-    margin-top: 20px;
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #e60000;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #0c0b0b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
 }
 
 p {
-    font-size: 1.2rem;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-li {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-
-a {
-    color: #3498db;
-    text-decoration: none;
+label {
+    margin-top: 10px;
     font-weight: bold;
 }
 
-a:hover {
-    color: #f39c12;
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    background-color: #ff6600;
+    background-color: #e60000;
     color: white;
-    font-size: 1.2em;
-    padding: 10px 20px;
+    padding: 10px;
+    margin-top: 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-}
-
-button a {
-    text-decoration: none;
-    color: white;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #cc5200;
+    background-color: #b30000;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.7em;
-    }
-    h3 {
-        font-size: 1.3em;
-    }
-    p {
-        font-size: 1.1em;
-    }
+.contact-info {
+    margin-top: 20px;
+    padding: 10px;
+    background: #060606;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    margin-top: 20px;
 }

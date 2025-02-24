@@ -1,73 +1,133 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    text-align: center;
-    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3 {
-    color: #ffcc00;
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #111;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e60000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #0a0a0a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-top: 20px;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #e60000;
+    ;
 }
 
 h2 {
-    font-size: 2em;
-    color: #ff6600;
-    margin-top: 15px;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 1.5em;
-    color: #cccccc;
+    font-size: 18px;
     font-weight: normal;
-    margin-bottom: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
 p {
-    font-size: 1.2em;
-    color: #ddd;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
 }
+
+.card {
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
 
 button {
-    background-color: #ff6600;
+    background-color: #e60000;
     color: white;
-    font-size: 1.2em;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
-}
-
-button a {
-    text-decoration: none;
-    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #cc5200;
+    background-color: #b51010;
 }
 
-@media (max-width: 768px) {
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    
     h1 {
-        font-size: 2em;
+        font-size: 24px;
     }
+    
     h2 {
-        font-size: 1.7em;
+        font-size: 20px;
     }
-    h3 {
-        font-size: 1.3em;
-    }
+    
     p {
-        font-size: 1.1em;
+        font-size: 14px;
     }
 }
